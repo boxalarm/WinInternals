@@ -1,7 +1,9 @@
 // DLL that can be used for testing - it'll pop a message box when successfully
 // injected into a process
 
-#include "framework.h"
+// INSTRUCTIONS: Compile using VS build tools
+// cl /LD dlltest.c /DUNICODE /D_UNICODE /link user32.lib /OUT:dlltest.dll
+
 #include <Windows.h>
 #include <stdio.h>
 #include <stdlib.h> // required for _countof
