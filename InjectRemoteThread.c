@@ -8,6 +8,9 @@
 //	  - Use LoadLibrary to load our DLL into target process (requires us to use GetProcAddress and GetModuleHandle)
 //  - Cleanup
 
+// Compile with VS build tools:
+// cl .\InjectRemoteThread.c /DUNICODE /D_UNICODE
+
 #include <Windows.h>
 #include <stdio.h>
 
