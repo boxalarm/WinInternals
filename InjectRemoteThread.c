@@ -16,7 +16,7 @@
 
 int main(int argc, char* argv[]) {
 	if (argc != 3) {
-		printf("Usage: Injector [pid] [dllpath]\n");
+		printf("Usage: InjectRemoteThread [pid] [dllpath]\n");
 		return 0;
 	}
 
